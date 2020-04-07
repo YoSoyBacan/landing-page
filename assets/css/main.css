@@ -64,10 +64,8 @@ h1 {
 }
 
 h1, h2, h3, h4, h5 {
-  color: #ffffff;
   font-weight: bold;
   line-height: 1.5;
-	margin: 0 0 0.5em 0;
 	font-family: 'Montserrat', sans-serif;
 }
 mark {
@@ -186,15 +184,14 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
-	  font-family: 'Montserrat', sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		line-height: 20px; 
+		font-weight: 500;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
 		font-weight: bold;
 		line-height: 1.5;
-		margin: 0 0 0.5em 0;
 	}
 
 	h1 {
@@ -3927,17 +3924,14 @@ ul.actions.fit.stacked {
   background-image: url("images/fondo_principal.svg");
   background-position: bottom right;
 	background-repeat: no-repeat;
-  background-size: 60% 85%;
+	background-size: 60% 85%;
 }
 
 #intro p {
-	font-size: 1em;
 	margin: 0;
 	color: #ffffff;
-	margin-right: 25em;
-	line-height: 20px; 
+	margin-right: 50%;
 	text-align: justify;
-	font-weight: 500;
 }
 
 #intro h1 {
@@ -3946,6 +3940,7 @@ ul.actions.fit.stacked {
 	font-weight: 900;
 	line-height: 60px;
 	margin-bottom: 40px; 
+	color: #ffffff;
 }
 
 #intro h1 span {
@@ -3957,6 +3952,7 @@ ul.actions.fit.stacked {
 #intro h3 {
 	font-size: 1.20rem;
 	font-weight: 700;
+	color: #ffffff;
 }
 
 #intro .intro-buttons {
@@ -3989,3 +3985,53 @@ ul.actions.fit.stacked {
 }
 
 /* Como me Registro */
+
+#como_me_registro section {
+	padding: 0px;
+}
+
+#como_me_registro h2 {
+	font-weight: 900;
+	text-align: center;
+}
+
+#como_me_registro h3 {
+	color: #F5333F;
+}
+
+#como_me_registro p {
+	/* color: #1d224c; */
+	text-align: left;
+	font-size: 14px;
+}
+
+#como_me_registro {
+	background-color: #ffffff;
+}
+
+
+/* Como funciona */
+
+#como_funciona section {
+	padding: 0px;
+	text-align: center;
+}
+
+#como_funciona h2 {
+	font-weight: 900;
+	text-align: center;
+}
+
+#como_funciona h3 {
+	color: #F5333F;
+}
+
+#como_funciona p {
+	/* color: #1d224c; */
+	text-align: left;
+	font-size: 14px;
+}
+
+#como_funciona {
+	background-color: #ffffff;
+}
