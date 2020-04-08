@@ -90,6 +90,10 @@ body a:active {
         text-align: left;
         padding-bottom: 1rem;
     }
+    .product-home__points .points__header{
+        font-size: 2em;
+        line-height:1.05;
+    }
 }
 
 @media screen and (min-width:768px){
