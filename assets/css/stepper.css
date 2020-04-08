@@ -87,7 +87,7 @@ body a:active {
     h1 {
         font-size: 20pt;
         font-weight: 900;
-        text-align: left;
+        padding-top: 1rem;
         padding-bottom: 1rem;
     }
     .product-home__points .points__header{

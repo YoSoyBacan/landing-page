@@ -4166,7 +4166,7 @@ ul.actions.fit.stacked {
 	}
 	
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 	#establecimientos h1 {
 		font-size: 20pt;
 		margin: 0;
@@ -4175,6 +4175,7 @@ ul.actions.fit.stacked {
 		margin-bottom: 40px; 
 		color: #ffffff;
 		text-align: left;
+		padding-top: 5rem;
 	}
 	#establecimientos h3 {
 		font-size: 1rem;
