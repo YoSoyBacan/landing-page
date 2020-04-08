@@ -3968,7 +3968,6 @@ ul.actions.fit.stacked {
 }
 
 #como_funciona h1 {
-	font-family: 'Montserrat' Black;
     font-size: 55pt;
 	font-weight: 900;
 	text-align: center;
@@ -3981,6 +3980,7 @@ ul.actions.fit.stacked {
 
 #como_funciona p {
 	/* color: #1d224c; */
+	font-family: 'Montserrat';
 	text-align: left;
 	font-size: 14px;
 }
