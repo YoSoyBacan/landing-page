@@ -3235,6 +3235,14 @@ ul.actions.fit.stacked {
 
 	}
 
+	@media screen and (max-width: 767px) {
+
+		.wrapper > .inner {
+			padding: 0em 2em 1em 2em ;
+		}
+
+	}
+
 	.wrapper.alt {
 		background-color: #261c3e;
 	}
@@ -3306,6 +3314,18 @@ ul.actions.fit.stacked {
 
 				.wrapper.fullscreen {
 					padding: 2em 0;
+					min-height: 0;
+				}
+
+					body.is-ie .wrapper.fullscreen {
+						height: auto;
+					}
+
+			}
+
+			@media screen and (max-width: 767px) {
+
+				.wrapper.fullscreen {
 					min-height: 0;
 				}
 
@@ -3935,6 +3955,70 @@ ul.actions.fit.stacked {
 	margin-left: -20px;
 }
 
+@media screen and (min-width: 768px){
+	.button.small {
+		display: none
+	}
+}
+
+@media screen and (max-width: 767px){
+	#intro {
+		background-image: url("images/fondo_principal_movil.svg");;
+		background-position: bottom left;
+	}
+
+	#intro h1 {
+		font-size: 25pt;
+		line-height: 40px;
+	}
+
+	#intro h1 br {
+		display: none;
+	}
+
+	#intro h3 {
+		font-size: 20px;
+		text-align: left;
+	}
+
+	#intro p {
+		margin-right: 0%;
+	}
+
+	#intro .button.primary .button.secondary {
+		width: 0%;
+		text-align: center;
+		text-size-adjust: 9px;
+	}
+
+	#motivacion p {
+		padding: 2em;
+	}
+
+	.button.primary {
+		display: none
+	}
+
+	.button.secondary {
+		display: none
+	}
+
+	.first.color-gradient {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 9px;
+			background-image: linear-gradient(to right, #10CFC9, #16cfc4, #26ceb7, #40cda1, #65cc82, #94ca5a, #cdc82a, #ffc600);
+			color: #312450 !important;
+	}
+
+	.second.color-gradient {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 9px;
+			background-image: linear-gradient(to left, #10CFC9, #16cfc4, #26ceb7, #40cda1, #65cc82, #94ca5a, #cdc82a, #ffc600);
+			color: #312450 !important;
+	}
+
+}
+
 @media screen and (max-width: 980px) {
 
   #intro p br {
@@ -3959,6 +4043,10 @@ ul.actions.fit.stacked {
 
 }
 
+/* Motivacion */
+#motivacion h2 {
+	color: #ffffff
+}
 
 /* Como funciona */
 
