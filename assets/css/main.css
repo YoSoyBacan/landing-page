@@ -1857,7 +1857,7 @@ input, select, textarea {
   }
   .button.main {
     font-size: 12px;
-	background-color: #FF6B00;
+		background-color: #FF6B00;
   }
 
   .button.secondary {
@@ -1866,7 +1866,6 @@ input, select, textarea {
 	color: #312450 !important;
 	width: 80%;
 	background-image: linear-gradient(to left, #10cfc9, #16cfc4, #26ceb7, #40cda1, #65cc82, #94ca5a, #cdc82a, #ffc600);
-	/* background-color: linear-gradient(to right, red); */
   }
   .button.secondary:after {
 	  display: none;
@@ -2715,12 +2714,11 @@ ul.actions.stacked {
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	margin-left: 0;
 }
 
 ul.actions.stacked li {
 	padding: 1.3em 0 0 0;
-	
+
 }
 
 ul.actions.stacked li:first-child {
@@ -3968,10 +3966,15 @@ ul.actions.fit.stacked {
 #intro .intro-buttons {
 	margin-top: 40px;
 	margin-left: -20px;
+	text-align: center;
 }
 
 @media screen and (min-width: 768px){
 	.button.small {
+		display: none
+	}
+
+	.mobile__logo {
 		display: none
 	}
 }
@@ -3983,7 +3986,8 @@ ul.actions.fit.stacked {
 	}
 
 	#intro h1 {
-		font-size: 25pt;
+		margin-top: 10px;
+		font-size: 8vw;
 		line-height: 40px;
 	}
 
@@ -4000,14 +4004,9 @@ ul.actions.fit.stacked {
 		margin-right: 0%;
 	}
 
-	#intro .button.primary .button.secondary {
-		width: 0%;
+	#intro .mobile__logo {
 		text-align: center;
-		text-size-adjust: 9px;
-	}
-
-	#motivacion p {
-		padding: 2em;
+		margin-right: 20px;
 	}
 
 	.button.primary {
@@ -4023,6 +4022,7 @@ ul.actions.fit.stacked {
 			font-size: 9px;
 			background-image: linear-gradient(to right, #10CFC9, #16cfc4, #26ceb7, #40cda1, #65cc82, #94ca5a, #cdc82a, #ffc600);
 			color: #312450 !important;
+			margin-left: 20px;
 	}
 
 	.second.color-gradient {
@@ -4030,38 +4030,23 @@ ul.actions.fit.stacked {
 			font-size: 9px;
 			background-image: linear-gradient(to left, #10CFC9, #16cfc4, #26ceb7, #40cda1, #65cc82, #94ca5a, #cdc82a, #ffc600);
 			color: #312450 !important;
+			margin-left: 20px;
 	}
 
 }
 
-@media screen and (max-width: 980px) {
-
-  #intro p br {
-    display: none;
-  }
-
-}
-
-@media screen and (max-width: 736px) {
-
-  #intro p {
-    font-size: 1em;
-  }
-
-}
-
-@media screen and (max-width: 1280px) {
-
-  #intro {
-    background-attachment: scroll;
-  }
-
-}
 
 /* Motivacion */
 #motivacion h2 {
 	color: #ffffff
 }
+
+@media screen and (max-width: 767px){
+	#motivacion p {
+		padding: 2em;
+	}
+}
+
 
 /* Como funciona */
 
@@ -4069,8 +4054,6 @@ ul.actions.fit.stacked {
 	padding: 0px;
 	text-align: center;
 }
-
-
 
 #como_funciona {
 	background-color: #ffffff;
@@ -4203,9 +4186,6 @@ ul.actions.fit.stacked {
 		font-size: 10pt;
 	}
 }
-
-
-
 
 
 
