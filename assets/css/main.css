@@ -2525,9 +2525,6 @@ input, select, textarea {
 		font-weight: 900;
 	}
 
-	.icon.brands:before {
-		font-family: 'Font Awesome 5 Brands';
-	}
 
 
 	@media screen and (min-width: 767px) {
@@ -2816,28 +2813,18 @@ ul.actions.fit.stacked {
 
 /* Icons */
 
-	ul.icons {
+	div.icons {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		display: flex;
 	}
 
-		ul.icons li {
-			display: inline-block;
-			padding: 0 0.75em 0 0;
-		}
 
-			ul.icons li:last-child {
-				padding-right: 0;
-			}
+	div.icons li > a, ul.icons li > span {
+		border: 0;
+	}
 
-			ul.icons li > a, ul.icons li > span {
-				border: 0;
-			}
-
-				ul.icons li > a .label, ul.icons li > span .label {
-					display: none;
-				}
 
 /* Menu */
 
@@ -3979,10 +3966,11 @@ ul.actions.fit.stacked {
 	}
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
 	#intro {
 		background-image: url("images/fondo_principal_movil.svg");;
 		background-position: bottom left;
+		background-size: 100% 100%;
 	}
 
 	#intro h1 {
@@ -4007,6 +3995,12 @@ ul.actions.fit.stacked {
 	#intro .mobile__logo {
 		text-align: center;
 		margin-right: 20px;
+	}
+
+	#intro .intro-buttons {
+		margin-top: 2rem;
+		text-align: center;
+		padding-left: 4rem;
 	}
 
 	.button.primary {
@@ -4035,12 +4029,27 @@ ul.actions.fit.stacked {
 
 }
 
-
+@media screen and (max-width: 420px) {
+	#intro .intro-buttons {
+		margin-top: 2rem;
+		text-align: center;
+		padding-left: 1rem;
+	}
+}
+.yellow-gradient {
+	background-image: linear-gradient(to right, #10CFC9, #94ca5a, #cdc82a, #ffc600);
+	font-weight: 900;
+}
 /* Motivacion */
 #motivacion h2 {
-	color: #ffffff
+	color: #ffffff;
+	line-height: 4rem;
 }
-
+#motivacion p {
+	color: #ffffff;
+	font-weight: 700;
+	opacity: 0.8;
+}
 @media screen and (max-width: 767px){
 	#motivacion p {
 		padding: 2em;
@@ -4069,8 +4078,8 @@ ul.actions.fit.stacked {
 		padding-top: 2rem;
 	}	
 	#button-wrapper {
-		padding-left: 12rem;
-		padding-right: 12rem;
+		padding-left: 20rem;
+		padding-right: 20rem;
 	}
 	#como_funciona a.small {
 		display: none;
@@ -4108,7 +4117,41 @@ ul.actions.fit.stacked {
 		height: 200px;
 		width: 240px;
 	}
- }
+}
+
+@media screen and (max-width:420px) {
+	#como_funciona p {
+		/* color: #1d224c; */
+		font-family: 'Montserrat';
+		text-align: left;
+		font-size: 14px;
+		line-height: 1.2rem;
+		padding-top: 2rem;
+		padding-left: 1.2rem;
+	}
+	#como_funciona a.primary {
+		display: none;
+	}
+	#como_funciona a.color-gradient {
+		background-image: linear-gradient(to right, #10CFC9, #16cfc4, #26ceb7, #40cda1, #65cc82, #94ca5a, #cdc82a, #ffc600);
+		font-size: 0.6rem;
+		font-weight: 900;
+		margin-bottom: 1rem;
+	}
+	h3 {
+		padding-right: 2rem;
+	}
+	.estab__image {
+		height: 140px;
+		width: 140px;
+		padding-left: 20%;
+	}
+	.points__image {
+		height: 200px;
+		width: 240px;
+		padding-right: 10%;
+	}
+}
 
 /* Establecimientos */
 @media screen and (min-width:768px) {
